@@ -5,6 +5,9 @@ function primeira() {
 
     function dif(){
         let result = num - ndois;
+        if (result < 0){
+            result = result * (-1);
+        }
         document.getElementById("dif").textContent = `A diferença entre ${num} e ${ndois} é = ${result}`;
     }
     function dobromaistriplo(){
